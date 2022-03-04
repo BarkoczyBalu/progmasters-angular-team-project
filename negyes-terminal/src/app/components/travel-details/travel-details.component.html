@@ -1,0 +1,72 @@
+<div class="container p-3 mt-md-5">
+
+    <div class="card d-flex mx-1">
+
+
+        <div class="p-2 m-2 mt-xl-4 text-center">
+            <h2 class="card-title text-dark"> {{travel?.destination}} </h2>
+            <hr class="style1 d-none d-xl-block">
+        </div>
+
+        <div class="row p-xl-5">
+
+            <div class="col-xl-6 d-flex justify-content-center align-items-center">
+
+                <div class="d-flex flex-column">
+
+                    <div class="bigimage">
+                        <img *ngIf="travel?.travel_type==='belfold'" [src]="src" class="card-img-top img-fluid"
+                            alt="{{travel?.image}}">
+
+                        <img *ngIf="travel?.travel_type==='kulfold'" [src]="src" class="card-img-top img-fluid"
+                            alt="{{travel?.image}}">
+                            
+                        <img *ngIf="travel?.travel_type==='fovarosi'" [src]="src" class="card-img-top img-fluid"
+                            alt="{{travel?.image}}">
+                    </div>
+
+                    <div class="extraimage p-3">
+                        <img (mouseover)="mouseover(image.source)" *ngFor="let image of extraimages"
+                            src="../../../assets/img/extra-kepek/{{image.source}}.jpg">
+                        <img *ngIf="extraimages[0]&&travel.travel_type=='belfold'"
+                            src="../../../assets/img/img-belfoldi-turizmus/{{this.travel?.image}}.jpg"
+                            (mouseover)="mouseover(this.travel.image)">
+                        <img *ngIf="extraimages[0]&&travel.travel_type=='kulfold'"
+                            src="../../../assets/img/img-kulfoldi-turizmus/{{this.travel?.image}}.jpg"
+                            (mouseover)="mouseover(this.travel.image)">
+                        <img *ngIf="extraimages[0]&&travel.travel_type=='fovarosi'"
+                            src="../../../assets/img/img-fovarosi-turizmus/{{this.travel?.image}}.jpg"
+                            (mouseover)="mouseover(this.travel.image)">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-xl-6">
+
+                <div class="card-body text-center d-flex flex-column">
+
+                    <h4 class="card-text text-secondary card-desc p-3">{{ travel?.description }}</h4>
+                    <h5 class="card-text text-dark card-date">Az utazás időpontja: {{travel?.date}} </h5>
+                    <h5 class="card-text text-dark card-date">Az utazás időtartama: {{travel?.long}} nap</h5>
+                    <hr class="style3">
+                    <p class="card-text travel-price pt-2" [ngClass]="{'pricetrough' : travel?.salesPrice}">
+                        {{travel?.price | forint}}
+                        Ft
+                    </p>
+                    <p class="travel-salesprice" *ngIf="travel?.salesPrice"> {{travel?.salesPrice | forint }} Ft </p>
+
+                    <p class="card-text font-weight-bold text-secondary">Foglalható helyek száma: {{travel?.stock}} </p>
+
+                    <a [routerLink]="" class="btn btn-primary-new mt-auto">Foglalás</a>
+                    
+                </div>
+                <div class="mx-3">
+                    <a (click)="navigateBack()" class="btn btn-secondary">Vissza</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

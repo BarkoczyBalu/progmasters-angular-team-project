@@ -1,0 +1,91 @@
+@import "../../../styles.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;700;900&family=Spectral:ital,wght@0,400;1,500&display=swap");
+
+.card-title {
+    font-family: "Sansita Swashed", cursive;
+    font-weight: 700;
+    font-size: 4vh;
+}
+
+.card-desc {
+    font-size: 2.3vh;
+    line-height: 1.3;
+    text-align: justify;
+}
+
+.travel-price {
+    font-size: 1.3rem;
+    color: $color-darkgrey;
+    margin-bottom: 0.5rem;
+}
+
+.travel-salesprice {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: orangered;
+}
+
+.pricetrough {
+    text-decoration: line-through;
+    font-size: 1.2rem;
+}
+
+.card-date {
+    font-size: 2vh;
+}
+
+hr.style1 {
+    border-top: 2px double grey;
+    text-align: center;
+}
+
+hr.style1:after {
+    content: url(../../../assets/img/brand/earth.svg);
+    display: inline-block;
+    position: relative;
+    top: -100px;
+    background-color: white;
+}
+
+hr.style2 {
+    border-top: 2px double grey;
+    text-align: center;
+}
+
+hr.style2:after {
+    content: url(../../../assets/img/brand/compass.svg);
+    display: inline-block;
+    position: relative;
+    top: -100px;
+    opacity: 0.5;
+}
+
+hr.style3 {
+    border-top: 2px solid grey;
+    text-align: center;
+}
+
+hr.style3:after {
+    // content: "\002665";
+    // content: "\1F9F3";
+    content: "\1F30E";
+    display: inline-block;
+    position: relative;
+    top: -20px;
+    padding: 0 20px;
+    background: white;
+    font-size: 28px;
+}
+
+////////////////////////////////////
+
+.extraimage img {
+    max-width: 50px;
+    padding: 0.3rem;
+    cursor: pointer;
+
+    @media (min-width: 800px) {
+        max-width: 80px;
+    }
+}

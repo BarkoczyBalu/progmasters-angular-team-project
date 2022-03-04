@@ -1,0 +1,31 @@
+<div class="container col-lg-12 mt-5">
+    <div class="row justify-content-end">
+
+        <div class="col-12 col-md-4 col-xl-3 text-center">
+
+            <select (click)="onSort($event)" class="form-select" name="sort">
+                <option value="" selected disabled>Rendezés</option>
+                <option value="abc">Rendezés ABC szerint</option>
+                <option value="up">Rendezés ár szerint növekvő</option>
+                <option value="down">Rendezés ár szerint csökkenő</option>
+            </select>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container col-lg-12">
+    <div class="row mx-auto">
+
+        <div class="text-center py-3 mb-0">
+            <h3 class="m-0 card-title">Belföldi utak</h3>
+        </div>
+
+        <app-travel-card [travel]="travel" *ngFor="let travel of travels"
+            class="col-11 col-md-6 col-lg-4 col-xl-3 mx-auto mx-lg-0 mb-4 px-lg-0">
+        </app-travel-card>
+
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="text-center container col-lg-5 mt-5">
+    <!-- <img…> -->
+    <h2 id="up" class="pb-2 card-title">„Utazni jó!”</h2>
+
+    <app-carousel></app-carousel>
+</div>
+
+<div class="text-center pt-3 mt-2">
+    <h3 class="m-0 card-title">Kiemelt ajánlataink</h3>
+</div>
+
+<div class="container">
+
+    <div class="container col-lg-12 mt-3">
+        <div class="row mx-auto">
+            <h2 class="m-0 card-title">Belföldi utak</h2>
+
+            <app-travel-card [travel]="travel" *ngFor="let travel of belfoldiMainPageTravels"
+                class="col-11 col-md-6 col-lg-4 col-xl-3 mx-auto mx-lg-0 mb-4 px-lg-0">
+            </app-travel-card>
+
+        </div>
+    </div>
+    <div class="container col-lg-12 mt-3">
+        <div class="row mx-auto">
+            <h2 class="m-0 card-title">Fővárosi túrák</h2>
+
+            <app-travel-card [travel]="travel" *ngFor="let travel of fovarosiMainPageTravels"
+                class="col-11 col-md-6 col-lg-4 col-xl-3 mx-auto mx-lg-0 mb-4 px-lg-0">
+            </app-travel-card>
+
+        </div>
+    </div>
+
+    <div class="container col-lg-12 mt-5">
+        <div class="row mx-auto">
+
+            <app-travel-card [travel]="travel" *ngFor="let travel of kulfoldiMainPageTravels"
+                class="col-11 col-md-6 col-lg-4 col-xl-3 mx-auto mx-lg-0 mb-4 px-lg-0">
+            </app-travel-card>
+
+        </div>
+    </div>
+
+
+</div>
+
+<div class="p-3 text-center">
+    <a style="cursor:pointer" routerLink="#up"><img src="../../../assets/img/brand/up.svg" width="50px" alt=""></a>
+</div>

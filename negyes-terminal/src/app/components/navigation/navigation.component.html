@@ -1,0 +1,43 @@
+<div class="fixed-distance mb-5">
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" routerLink="">4-es Terminal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link btn-menu" routerLink="/"><i class="fa fa-home"
+                                style="font-size:24px;color:#044ebd"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-menu" routerLink="/belfoldi">Belföldi utak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-menu" routerLink="fovarosi">Fővárosi túra</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-menu" routerLink="/kulfoldi">Külföldi utak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a *ngIf="isSignedIn && isAdmin" class="nav-link btn-menu" routerLink="/admin">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-menu" routerLink="/contact">Kapcsolat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a *ngIf="!isSignedIn" class="nav-link btn-menu text-right" routerLink="/login">Bejelentkezés</a>
+                    </li>
+                    <li class="nav-item">
+                        <a *ngIf="isSignedIn" (click)="logout()" class="nav-link btn-menu text-right">Kijelentkezés</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</div>

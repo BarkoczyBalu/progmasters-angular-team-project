@@ -1,0 +1,855 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "negyesterminal",
+      "password": "12345",
+      "email": "negyesterminal@gmail.com",
+      "isAdmin": true
+    },
+    {
+      "email": "kiskacsa@gmail.com",
+      "username": "kiskacsa",
+      "password": "123456",
+      "isAdmin": false,
+      "id": 2
+    }
+  ],
+  "travels": [
+    {
+      "travel_type": "belfold",
+      "destination": "Hollókő, húsvéti locsolkodás",
+      "description": "1 napos kirándulás. Hollókő az UNESCO Világörökség része. Az Ófalu 67 piros cserepes műemlék háza pont úgy néz ki, mint száz évvel ezelőtt. Hollókő élő, működő falu, melynek lakói húsvétkor magukra öltik híres, színpompás népviseletüket, és életre keltik a magyar húsvéti népszokások legjavát.",
+      "date": "2022.04.16",
+      "long": 1,
+      "price": 12000,
+      "salesPrice": 11000,
+      "stock": 20,
+      "mainPage": true,
+      "active": false,
+      "image": "holloko",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "travel_type": "belfold",
+      "destination": "Sopron óvárosa és a Tűztorony",
+      "description": "2 éjszaka 5*-os szállodában, reggelivel. 2 fő részére.",
+      "date": "2022.06.10-06.12",
+      "long": 3,
+      "price": 75000,
+      "salesPrice": 72000,
+      "stock": 12,
+      "mainPage": false,
+      "active": true,
+      "image": "sopron"
+    },
+    {
+      "id": 3,
+      "travel_type": "belfold",
+      "destination": "Keszthely, az impozáns Festetics-kastély",
+      "description": "1 napos kirándulás. Ellátás nélkül. A ma is múzeumként látogatható kastély története 1739-ben kezdődött, amikor Festetics Kristóf, aki megvásárolta Keszthelyet és környékének egyes részeit és így a környék legnagyobb birtokosává vált. Fedezzük fel együtt!",
+      "date": "2022.05.07",
+      "long": 1,
+      "price": 12000,
+      "salesPrice": 0,
+      "stock": 0,
+      "mainPage": false,
+      "active": false,
+      "image": "keszthely"
+    },
+    {
+      "id": 4,
+      "travel_type": "belfold",
+      "destination": "Aggtelek, Baradla-barlang",
+      "description": "1 napos kirándulás. Ellátás nélkül. Az ajánlat a barlangba a belépőt tartalmazza.",
+      "date": "2022.06.11",
+      "long": 1,
+      "price": 13000,
+      "salesPrice": 0,
+      "stock": 18,
+      "mainPage": false,
+      "active": true,
+      "image": "aggteleki-barlang"
+    },
+    {
+      "id": 5,
+      "travel_type": "belfold",
+      "destination": "Szegedi Szabadtéri Játékok",
+      "description": "Ismerje meg Szeged város történelmét és este nézze meg velünk a világ musicalirodalmának egyik legnépszerűbb darabját, a Chicago-t. 1 éjszaka 4*-os szállodában, reggelivel.",
+      "date": "2022.08.12-08.13",
+      "long": 2,
+      "price": 17500,
+      "salesPrice": 15500,
+      "stock": 18,
+      "mainPage": false,
+      "active": true,
+      "image": "szeged"
+    },
+    {
+      "travel_type": "belfold",
+      "destination": "A hortobágyi nemzeti park",
+      "description": "A Hajdúság és a Tisza folyó között elterülő Hortobágy, valamint annak pásztor- és betyárromantikája csalogató turisztikai látványosság a magyaroknak és külföldieknek egyaránt. ",
+      "date": "2022.08.13",
+      "long": 1,
+      "price": 14000,
+      "salesPrice": 12000,
+      "stock": 12,
+      "mainPage": false,
+      "active": true,
+      "image": "hortobagy",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "travel_type": "belfold",
+      "destination": "Esztergomi bazilika és Főszékegyházi kincstár",
+      "description": "Egyedülálló mennyiségű kulturális és történelmi látnivaló található Esztergomban. Fedezze fel velünk a vízivárost, melynek központja a Várhegy, melynek tetején a főszékesegyház emelkedik.",
+      "date": "2022.05.21",
+      "long": 1,
+      "price": 8500,
+      "salesPrice": 0,
+      "stock": 10,
+      "mainPage": false,
+      "active": true,
+      "image": "esztergom"
+    },
+    {
+      "id": 8,
+      "travel_type": "belfold",
+      "destination": "Visegrád, a Dunakanyar fővárosa",
+      "description": "1 napos kirándulás. Ellátás nélkül. Az ajánlat a várjátékokra a belépőt tartalmazza. Velük együtt közel ezer kosztümös szereplő érkezik Visegrádra, hogy méltóképpen idézhessük fel az egykori királyi székváros legfényesebb történelmi eseményét, a palotajátékot.",
+      "date": "2022.07.09",
+      "long": 1,
+      "price": 9500,
+      "salesPrice": 0,
+      "stock": 8,
+      "mainPage": false,
+      "active": true,
+      "image": "visegrad"
+    },
+    {
+      "id": 9,
+      "travel_type": "belfold",
+      "destination": "Tapolcai tavasbarlang, élményfürdőzés",
+      "description": "Magyarország egyik leglátogatottabb barlangját, a Tapolcai-tavasbarlangot a 20. század elején fedezték fel, 1912-től látogatható és 1938 óta csónakos felfedezésre is van lehetőség. Csodás családi élmény kicsiknek és nagyoknak egyaránt. 1 napos kirándulás. Ellátás nélkül. Az ajánlat a fürdőbelépőt tartalmazza.",
+      "date": "2022.07.30",
+      "long": 1,
+      "price": 12500,
+      "salesPrice": 11500,
+      "stock": 16,
+      "mainPage": false,
+      "active": true,
+      "image": "tapolca"
+    },
+    {
+      "id": 10,
+      "travel_type": "belfold",
+      "destination": "Hévízi-tó, az élet forrása",
+      "description": "3 éjszaka 4*-os szállodában, reggelivel. Az ajánlat része egy Ön által választott masszázs (aromamasszázs, fej-, test-, láb- és hátmasszázs, relaxáló masszázs és lávaköves masszázs) és 1 alkalomra szóló belépőjegy a tófürdőbe.",
+      "date": "2022.08.05-08.08",
+      "long": 4,
+      "price": 42000,
+      "salesPrice": 38000,
+      "stock": 12,
+      "mainPage": true,
+      "active": true,
+      "image": "heviz"
+    },
+    {
+      "id": 11,
+      "travel_type": "belfold",
+      "destination": "Pécs török emlékei",
+      "description": "1 éjszaka 4*-os szállodában, reggelivel.  Pécs megismerését kezdjük a Barbakánnal. A Barbakán egy XV. századi kör alaprajzú bástya, mely egyedüli az országban. Tudjon meg többet, ismerjük meg a várost!",
+      "date": "2022.07.02-07.03",
+      "long": 2,
+      "price": 23000,
+      "salesPrice": 21000,
+      "stock": 16,
+      "mainPage": false,
+      "active": true,
+      "image": "pecs"
+    },
+    {
+      "travel_type": "belfold",
+      "destination": "Sárospataki vár",
+      "description": "1 napos kirándulás. Ellátás nélkül. A sárospataki vár vagy más néven Rákóczi-vár, a magyarországi késő reneszánsz építészet legértékesebb alkotása, Sárospatak legjelentősebb műemléke. A magyar nemzeti örökség része. Fedezzük fel együtt!",
+      "date": "2022.08.20",
+      "long": 1,
+      "price": 15500,
+      "salesPrice": 14500,
+      "stock": 10,
+      "mainPage": true,
+      "active": true,
+      "image": "sarospatak",
+      "id": 12
+    },
+    {
+      "id": 13,
+      "travel_type": "belfold",
+      "destination": "Tihanyi levendula fesztivál",
+      "description": "1 napos kirándulás. Ellátás nélkül. Kérjük mindenki saját metszőollót hozzon magával.",
+      "date": "2022.07.04",
+      "long": 1,
+      "price": 15000,
+      "salesPrice": 12000,
+      "stock": 10,
+      "mainPage": false,
+      "active": true,
+      "image": "tihany"
+    },
+    {
+      "id": 14,
+      "travel_type": "belfold",
+      "destination": "Szigetköz, az aktív túrázók paradicsoma",
+      "description": "1 napos kirándulás. Ellátás nélkül.",
+      "date": "2022.06.18",
+      "long": 1,
+      "price": 13000,
+      "salesPrice": 11000,
+      "stock": 10,
+      "mainPage": false,
+      "active": true,
+      "image": "szigetkoz"
+    },
+    {
+      "id": 15,
+      "travel_type": "belfold",
+      "destination": "Andrássy-kastély, Tiszadob.",
+      "description": "1 napos kirándulás. Ellátás nélkül.  A középkori lovagi kastély megismerése.",
+      "date": "2022.05.28",
+      "long": 1,
+      "price": 14000,
+      "salesPrice": 13000,
+      "stock": 14,
+      "mainPage": false,
+      "active": true,
+      "image": "andrassy_kastely_tiszadob"
+    },
+    {
+      "id": 1,
+      "travel_type": "belfold",
+      "destination": "Egri borkóstolás",
+      "description": "2 éjszaka 4*-os szállodában, félpanziós ellátással. Szombati esti borkóstolással. 2 fő részére.",
+      "date": "2022.06.03-06.05",
+      "long": 3,
+      "price": 65000,
+      "salesPrice": 55000,
+      "stock": 20,
+      "mainPage": false,
+      "active": true,
+      "image": "eger"
+    },
+    {
+      "id": 17,
+      "travel_type": "belfold",
+      "destination": "Szentendrei Skanzen",
+      "description": "1 napos kirándulás. A Skanzen a 18-20. század népi építészetét, gazdálkodását és életmódját ismerteti meg velünk tárgyakkal, épületekkel és állatokkal. A parasztporták bemutatják egy-egy tájegység hagyományait és jellegzetességeit. A kirándulás a belépőjegy árát tartalmazza. Minden résztvevőt egy kemencében sült kenyérlángossal vendégelünk meg.",
+      "date": "2022.08.13",
+      "long": 1,
+      "price": 12500,
+      "salesPrice": 0,
+      "stock": 20,
+      "mainPage": true,
+      "active": true,
+      "image": "skanzen"
+    },
+    {
+      "id": 18,
+      "travel_type": "belfold",
+      "destination": "Séta a középkori hangulatú Kőszegen",
+      "description": "1 napos kirándulás. Ellátás nélkül.",
+      "date": "2022.06.18",
+      "long": 1,
+      "price": 12500,
+      "salesPrice": 0,
+      "stock": 0,
+      "mainPage": false,
+      "active": false,
+      "image": "koszeg"
+    },
+    {
+      "id": 19,
+      "travel_type": "belfold",
+      "destination": "Hajdúszoboszló, az Alföld fürdővárosa",
+      "description": "2 éjszaka 5*-os szállodában, félpanziós ellátással. Éjjeli élményfürdőzéssel. 2 fő részére.",
+      "date": "2022.07.01-07.03",
+      "long": 3,
+      "price": 55000,
+      "salesPrice": 51000,
+      "stock": 12,
+      "mainPage": false,
+      "active": true,
+      "image": "hajduszoboszlo"
+    },
+    {
+      "id": 20,
+      "travel_type": "belfold",
+      "destination": "Fertődi kirándulás, az Esterházy-kastély felfedezése",
+      "description": "1 napos kirándulás. Ellátás nélkül.",
+      "date": "2022.08.06",
+      "long": 1,
+      "price": 14000,
+      "salesPrice": 13000,
+      "stock": 14,
+      "mainPage": false,
+      "active": true,
+      "image": "eszterhazy-kastely"
+    },
+    {
+      "id": 21,
+      "travel_type": "belfold",
+      "destination": "Badacsony és a környező tanúhegyek",
+      "description": "1 napos kirándulás. Ellátás nélkül.",
+      "date": "2022.07.08",
+      "long": 1,
+      "price": 13000,
+      "salesPrice": 0,
+      "stock": 0,
+      "mainPage": false,
+      "active": false,
+      "image": "badacsony"
+    },
+    {
+      "id": 22,
+      "travel_type": "belfold",
+      "destination": "Szalajka-völgy túra, Szilvásvárad",
+      "description": "1 napos kirándulás. Ellátás nélkül.",
+      "date": "2022.07.07",
+      "long": 1,
+      "price": 13000,
+      "salesPrice": 12000,
+      "stock": 14,
+      "mainPage": false,
+      "active": true,
+      "image": "szalajka"
+    },
+    {
+      "travel_type": "kulfold",
+      "destination": "Rodosz",
+      "description": "6 éjszaka 4*-os szállodában, reggelivel. Rodosz gyönyörű homokos strandokkal, garantált napsütéssel, igazi görög hangulattal és néhány történelmi látnivalóval is csábítja a turistákat. A gyerekeket pedig többek között jó aquaparkal és állatsimogatóval várja a sziget.",
+      "date": "2022.05.10",
+      "long": 7,
+      "price": 220000,
+      "salesPrice": 195000,
+      "stock": 50,
+      "mainPage": false,
+      "active": true,
+      "image": "rodosz",
+      "id": 23
+    },
+    {
+      "travel_type": "kulfold",
+      "destination": "Kréta",
+      "description": "6 éjszaka 4*-os szállodában, reggelivel. Görögország legnagyobb szigete az első nagy görög civilizáció, a mínoszi kultúra otthona volt. Kréta szigete Görögország egyik legkedveltebb nyaralási úticélja, ahol a természeti látnivalók mellett érdemes betérni a hangulatos tavernákba, ahol feltétlenül megkóstoljuk a helyi specialitásokat, mint például a tipikus krétai olívaolajjal készült görög salátát és a Rakit! Túrázunk Kréta vadregényes hegyei között, hajózunk a Földközi-tenger azúrkék vizein, lazítunk a napsütötte homokos strandokon, vár Görögország egyik legszebb szigete!",
+      "date": "2022.05.14",
+      "long": 7,
+      "price": 240000,
+      "salesPrice": 225000,
+      "stock": 50,
+      "mainPage": false,
+      "active": true,
+      "image": "kreta",
+      "id": 24
+    },
+    {
+      "id": 25,
+      "travel_type": "kulfold",
+      "destination": "Cinque Terre",
+      "description": "6 éjszaka 3 különböző városban. Mindegyik szálloda 4*-os és mindegyik esetében biztosított a reggeli. A Cinque Terre egy, 5 településből álló, Ligur-tenger menti parti szakasz, ami része az Unesco kulturális világörökségének és turisztikai szenzáció. Ez a partszakasz Punta Mesco-tól Punta di Montenero-ig terjed. Az 5 sztár település, délről észak felé: Riomaggiore, Manarola, Corniglia, Nernazza és Monterosso.",
+      "date": "2022.06.10",
+      "long": 7,
+      "price": 185000,
+      "salesPrice": 0,
+      "stock": 50,
+      "mainPage": false,
+      "active": true,
+      "image": "cinqueterre"
+    },
+    {
+      "id": 26,
+      "travel_type": "kulfold",
+      "destination": "Szicília",
+      "description": "6 éjszaka 4*-os szállodában, reggelivel. A Földközi-tenger legnagyobb szigetén, Szicílián minden megtalálható, ami egy felejthetetlen nyaraláshoz szükséges: nyüzsgő városok, lélegzetelállító tengerpartok, ókori emlékek, kitűnő ételek-italok, sőt még az aktív vulkánok is felfedezésre csábítanak.",
+      "date": "2022.08.10",
+      "long": 7,
+      "price": 330000,
+      "salesPrice": 0,
+      "stock": 20,
+      "mainPage": false,
+      "active": true,
+      "image": "szicilia"
+    },
+    {
+      "id": 27,
+      "travel_type": "kulfold",
+      "destination": "Capri",
+      "description": "6 éjszaka 5*-os szállodában, reggelivel, ebéddel és vacsorával. Caprin, természeti adottságait tekintve nem meglepő módon, nem homokos strandokat találunk: a strandok sziklásak-kavicsosak, de a homokos partok kedvelőit egészen biztosan kárpótolják a sziget csodái. Az egyik legnépszerűbb strand a Marina Piccola, Capri déli részén található. A fürdés mellett kiválóakat lehet a szigeten kirándulni: a kirándulások, hegymászások végpontjai, és a túrák önmagukban is fantasztikus látványt nyújtanak. A sziget körbehajózása szintén hatalmas élmény.",
+      "date": "2022.08.11",
+      "long": 7,
+      "price": 390000,
+      "salesPrice": 310000,
+      "stock": 20,
+      "mainPage": false,
+      "active": true,
+      "image": "capri"
+    },
+    {
+      "travel_type": "kulfold",
+      "destination": "Isztria",
+      "description": "13 éjszaka 5*-os szállodában, reggelivel, ebéddel és vacsorával. Isztriára a multikulturalitás a jellemző, az évszázadokig velencei uralom alatt lévő félsziget képe ma is tipikusan olaszos, az osztrák uralom főleg Pulára nyomta rá bélyegét. Jugoszláviához csak a második világháború után került a térség, de bizonyos részei csak az 50-es évektől lettek részei a délszláv államnak.",
+      "date": "2022.08.12",
+      "long": 14,
+      "price": 250000,
+      "salesPrice": 180000,
+      "stock": 20,
+      "mainPage": false,
+      "active": true,
+      "image": "isztria",
+      "id": 28
+    },
+    {
+      "id": 29,
+      "travel_type": "kulfold",
+      "destination": "Dubrovnik",
+      "description": "13 éjszaka 4*-os szállodában, reggelivel, ebéddel és vacsorával. A Horvátország legdélebbi csücskében, Dalmáciában található Dubrovnik talán Horvátország leggyönyörűbb városa, és a világ egyik legszebb üdülőhelye, óvárosa 1994 óta a Világörökség része. Gyönyörű házacskái, és kristálytiszta, mélykék tengere, a középkori városfalak között összezsúfolódó számos történelmi látnivaló rabul ejti az ide érkezőket. Dubrovnikot az Adria gyöngyének is nevezik ; a város a horvát nyelv, és irodalom központja, számos híres író szülőhelye. George Bernard Shaw egyszerűen így fogalmaz: 'Ha látni akarod a földi paradicsomot, gyere el Dubrovnikba'.",
+      "date": "2022.08.13",
+      "long": 14,
+      "price": 320000,
+      "salesPrice": 240000,
+      "stock": 20,
+      "mainPage": false,
+      "active": true,
+      "image": "dubrovnik"
+    },
+    {
+      "id": 30,
+      "travel_type": "kulfold",
+      "destination": "Firenze",
+      "description": "2 éjszaka 4*-os szállodában, reggelivel. A belváros szűk kis utcái, a zöldellő Arno folyó, és dombok, valamint a múzeumok és templomok falai számtalan felfedezésre váró kincset tartogatnak az odalátogatók számára. Európa egyik legérdekesebb, és legszebb városában ha rengeteg időt is töltünk, a műalkotások, történelmi emlékek csak egy töredékét láthatjuk. Firenze neve összefonódott a művészettel: az egész város egy hatalmas, élő műalkotás. Firenze a reneszánsz és az opera szülőhelye, a 13. századtól a 16. századig Európa legfontosabb városa volt.",
+      "date": "2022.08.14",
+      "long": 3,
+      "price": 185000,
+      "salesPrice": 160000,
+      "stock": 50,
+      "mainPage": false,
+      "active": true,
+      "image": "firenze"
+    },
+    {
+      "travel_type": "kulfold",
+      "destination": "London",
+      "description": "2 éjszaka 4*-os szállodában, reggelivel. London kiváló hangulattal, rengeteg érdekes látnivalóval és ingyenes, világszinvonalú múzeumokkal várja az utazókat. Ugyan az Angliába beutazáshoz 2021. október 1-től a személyi igazolvány már nem elég, útlevél szükséges, Londont mindenképp érdemes meglátogatni.",
+      "date": "2022.08.15",
+      "long": 3,
+      "price": 390000,
+      "salesPrice": 360000,
+      "stock": 50,
+      "mainPage": false,
+      "active": true,
+      "image": "london",
+      "id": 31
+    },
+    {
+      "id": 32,
+      "travel_type": "kulfold",
+      "destination": "Barcelona",
+      "description": "1 éjszaka 4*-os szállodában, reggelivel, ebéddel és vacsorával. Az 1,6 milliós Barcelona Európa egyik legizgalmasabb városa: különleges, modernista épületeket, remek tengerpartokat, hegyeket és izgalmas kirándulási lehetőségeket egyaránt kínál. Kifejezetten sok programlehetőség van Barcelonában és a környéken, akár 1-2 hétig is könnyedén el lehet tölteni az időt a katalán fővárosban, az európai városok közül az egyik legtöbb jelentős látnivalóval rendelkezik. És persze az elsőrangú gasztronómiáról és Barcelona pezsgő hangulatáról se szabad megfeledkezni.",
+      "date": "2022.08.16",
+      "long": 2,
+      "price": 249000,
+      "salesPrice": 210000,
+      "stock": 50,
+      "mainPage": false,
+      "active": true,
+      "image": "barcelona"
+    },
+    {
+      "id": 33,
+      "travel_type": "kulfold",
+      "destination": "Párizs",
+      "description": "1 éjszaka 4*-os szállodában, reggelivel. Párizs a világ egyik leglátogatottabb, és sokak szerint a világ legszebb fővárosa. Hívják még a fények, a szabadság, a divat, vagy a szerelem városának is. A nevezetességeken kívüli Párizs is pompás. A századelőn épült, és folyamatosan felújított épületek egységes, patinás légkört adnak az utcáknak. Egy idő után már fel sem tűnik, hogy egy híres, és szép épületet látunk, hiszen Párizsban szinte minden utcában láthatunk egy fantasztikus építészeti csodát, vagy egy hangulatos parkot.",
+      "date": "2022.08.17",
+      "long": 2,
+      "price": 275000,
+      "salesPrice": 230000,
+      "stock": 30,
+      "mainPage": false,
+      "active": true,
+      "image": "parizs"
+    },
+    {
+      "id": 34,
+      "travel_type": "kulfold",
+      "destination": "Róma",
+      "description": "1 éjszaka 4*-os szállodában, reggelivel. A 2,9 milliós, hangulatos Róma, az egykori Római Birodalom bölcsője, a Vatikán otthona, csodás történelmi látnivalókkal, lenyűgöző templomokkal várja az utazókat. És a kiváló fagylaltokat és a legjobb kávékat se feledjük.",
+      "date": "2022.08.18",
+      "long": 2,
+      "price": 210000,
+      "salesPrice": 190000,
+      "stock": 30,
+      "mainPage": false,
+      "active": true,
+      "image": "roma"
+    },
+    {
+      "id": 35,
+      "travel_type": "kulfold",
+      "destination": "Milánó",
+      "description": "2 éjszaka 4*-os szállodában, reggelivel, ebéddel és vacsorával. Az 1,4 milliós Milánó, Róma után, Olaszország 2. legnagyobb városa, ugyanakkor az ország legfontosabb, legjelentősebb városa. Olaszország ipari fővárosának tartják. A legmodernebb város az országban: ha Róma a 'régi', Milánó mindenképpen az 'új'. Kozmopolita, elegáns, nyüzsgő város, elegáns, fényes üzletekkel, forgataggal.",
+      "date": "2022.08.19",
+      "long": 3,
+      "price": 170000,
+      "salesPrice": 0,
+      "stock": 30,
+      "mainPage": false,
+      "active": true,
+      "image": "milano"
+    },
+    {
+      "id": 36,
+      "travel_type": "kulfold",
+      "destination": "Lisszabon",
+      "description": "1 éjszaka 4*-os szállodában, reggelivel, ebéddel és vacsorával. Portugália fővárosa és egyben legnagyobb városa az 547 000 lakosú Lisszabon. A portugál főváros Európa kontinentális részének legnyugatabbra elhelyezkedő városa, mely a Tejo folyó torkolatánál, az Atlanti-Óceán partján fekszik, 300 km-re Algarve-től és 400 km-re a spanyol határtól. Lisszabon változatos programokat kínál látogatóinak – strandok, történelmi emlékek, hegyek és a Lisszabon közelében lévő látnivalók miatt érdemes a városba látogatni. Lisszabon Európa egyik legrégebbi városa, a város öregebb, mint Róma, London, vagy Párizs. Ammanhoz, Rómához és San Franciscohoz hasonlóan hét dombra épült.",
+      "date": "2022.08.20",
+      "long": 2,
+      "price": 160000,
+      "salesPrice": 0,
+      "stock": 30,
+      "mainPage": false,
+      "active": true,
+      "image": "lisszabon"
+    },
+    {
+      "travel_type": "kulfold",
+      "destination": "Bali",
+      "description": "13 éjszaka 4*-os szállodában, reggelivel. Bali Indonézia egyik szigete, 5780 négyzetkilométer területű, lakossága kb. 4,2 millió (2022-es becslés). Bali a nála sokkal nagyobb Jáva sziget déli végének közelében fekszik. A két sziget közötti legrövidebb távolság mindössze 3,5 kilométer. Fontos tudni, hogy a mozlim többségű Indonéziában Bali lakói 85 százalékban a hinduizmus hitét követik (pontosabban ez a hinduizmus gyakorlásának egy helyi változata)!",
+      "date": "2022.08.21",
+      "long": 14,
+      "price": 630000,
+      "salesPrice": 550000,
+      "stock": 50,
+      "mainPage": false,
+      "active": true,
+      "image": "bali",
+      "id": 37
+    },
+    {
+      "id": 38,
+      "travel_type": "kulfold",
+      "destination": "St Lucia",
+      "description": "13 éjszaka 5*-os szállodában, reggelivel. Saint Lucia a Kis-Antillák Szél felőli-szigetcsoportjának ívében fekvő szigetállam. A Saint Vincent és a Grenadine-szigetektől északkeletre, Barbadostól északnyugatra, Martinique-tól délre helyezkedik el. Területe 620 km², lakosainak száma mintegy 160 000. Szirakúzai Szent Lucáról nevezték el első európai gyarmatosítói, a franciák. A sziget vulkanikus eredetű, trópusi éghajlatú földjén cukornádat, banánt, kókuszdiót, kakaót és citrusféléket termesztenek. Pontosan olyan sziget, amiről a karibi térségbe utazók álmodnak: egy kis, buja trópusi ékkő, ami még talán kevésbé ismert.",
+      "date": "2022.08.22",
+      "long": 14,
+      "price": 835000,
+      "salesPrice": 790000,
+      "stock": 5,
+      "mainPage": false,
+      "active": true,
+      "image": "st_lucia"
+    },
+    {
+      "travel_type": "kulfold",
+      "destination": "Új-Zéland",
+      "description": "11 éjszaka 4*-os szállodában, reggelivel. Az anyatermészet mintha eldöntötte volna, hogy ebbe a déltengeri szigetországba belead mindent. Itt aztán minden van: fenséges hegyvonulatok, mély fjordok, hosszan elnyúló, érintetlen tengerpartok, áthatolhatatlan őserdők, működő tűzhányók, kozmopolita hangulatú városok, hagyományőrzés, kivik. Ráadásul mindeme csodák egyetlen, viszonylag szűk területre koncentrálódnak. Szó, mi szó, Új-Zéland különleges ország.",
+      "date": "2022.08.23",
+      "long": 12,
+      "price": 638000,
+      "salesPrice": 600000,
+      "stock": 16,
+      "mainPage": false,
+      "active": true,
+      "image": "uj_zeland",
+      "id": 39
+    },
+    {
+      "travel_type": "fovarosi",
+      "destination": "Hősök tere",
+      "description": "Budapest ikonikus, legtágasabb tere az 1896-os millenniumi ünnepségre készült el. A félkör alakú emlékmű 14 szobra a magyar történelem emblematikus személyiségének állít emléket.",
+      "date": "2022.06.19.",
+      "long": 1,
+      "price": 6000,
+      "salesPrice": 5400,
+      "stock": 16,
+      "mainPage": false,
+      "active": true,
+      "image": "hosok-tere",
+      "id": 40
+    },
+    {
+      "travel_type": "fovarosi",
+      "destination": "Fővárosi Állat- és Növénykert",
+      "description": "Magyarország legnagyobb állatkertje az itt bemutatott rengeteg állatfajjal egész napos szórakozást nyújt kicsiknek és nagyoknak. Legújabb sztárjai a 2015-ben érkezett koalák.",
+      "date": "2022.05.05.",
+      "long": 1,
+      "price": 12000,
+      "salesPrice": 0,
+      "stock": 6,
+      "mainPage": false,
+      "active": true,
+      "image": "allatkert",
+      "id": 41
+    },
+    {
+      "travel_type": "fovarosi",
+      "destination": "Halászbástya",
+      "description": "A Várhegy ikonikus, neoromán stílusú építménye. Neve arra utal, hogy a középkorban a várfal e részét a halászok céhe védte. Történelmi atmoszféra, csodás kilátás a városra – elő a fényképezőgéppel!",
+      "date": "2022.03.12.",
+      "long": 1,
+      "price": 7000,
+      "salesPrice": 6200,
+      "stock": 8,
+      "mainPage": true,
+      "active": true,
+      "image": "halaszbastya",
+      "id": 42
+    },
+    {
+      "travel_type": "fovarosi",
+      "destination": "Budavári Palota",
+      "description": "A 13. századtól a magyar királyok otthona volt, számos újjáépítés után ma Budapest egyik legfontosabb turisztikai és kulturális központja. Kezdje itt a város felfedezését!",
+      "date": "2022.08.28.",
+      "long": 2,
+      "price": 18000,
+      "salesPrice": 16000,
+      "stock": 10,
+      "mainPage": true,
+      "active": true,
+      "image": "budavar",
+      "id": 43
+    },
+    {
+      "travel_type": "fovarosi",
+      "destination": "Parlament",
+      "description": "A lenyűgöző, neogótikus stílusú Országház közel 20 évig épült. Először a honfoglalás ezredik évfordulóján, a1896-ben ülésezett itt az Országgyűlés. Itt őrzik a Szent Koronát is.",
+      "date": "2022.04.11.",
+      "long": 1,
+      "price": 20000,
+      "salesPrice": 0,
+      "stock": 0,
+      "mainPage": false,
+      "active": false,
+      "image": "parlament",
+      "id": 44
+    },
+    {
+      "travel_type": "fovarosi",
+      "destination": "Széchenyi Fürdő",
+      "description": "A Széchenyi gyógyfürdő Budapest és egyben Európa legnagyobb fürdőkomplexuma. Termálvize számos panaszra nyújt enyhülést. A medencékben máig sakkpartikat tartanak a törzsvendégek.",
+      "date": "2022.03.25.",
+      "long": 1,
+      "price": 24000,
+      "salesPrice": 21000,
+      "stock": 11,
+      "mainPage": true,
+      "active": true,
+      "image": "szechenyi",
+      "id": 45
+    },
+    {
+      "travel_type": "fovarosi",
+      "destination": "Margitsziget",
+      "description": "Hatalmas, ősfás parkjaival a pihenni vágyók kedvenc helye. A mozgás szerelmeseit uszoda, strand, kiépített futópálya várja. Érdemes megnézni a zenélő szökőkutat és a vadasparkot is.",
+      "date": "2022.07.29.",
+      "long": 2,
+      "price": 30000,
+      "salesPrice": 0,
+      "stock": 20,
+      "mainPage": false,
+      "active": true,
+      "image": "margitsziget",
+      "id": 46
+    },
+    {
+      "travel_type": "fovarosi",
+      "destination": "Gellért-hegy és Citadella",
+      "description": "A budai Duna-parton álló 235 méteres hegyről gyönyörű kilátás nyílik a városra. Itt található a Szabadságszobor, Szent Gellért szobra és az egykor erődítménynek épült Citadella.",
+      "date": "2022.04.03.",
+      "long": 1,
+      "price": 13500,
+      "salesPrice": 0,
+      "stock": 0,
+      "mainPage": true,
+      "active": false,
+      "image": "gellert",
+      "id": 47
+    },
+    {
+      "travel_type": "fovarosi",
+      "destination": "Fővárosi Nagycirkusz",
+      "description": "Közép-Európa egyetlen kőcirkusza 1889 óta várja a Városligetben a közönséget. A látványos showelemekkel, attrakciókkal gazdagított előadások felhőtlen szórakozást biztosítanak.",
+      "date": "2022.05.23.",
+      "long": 1,
+      "price": 14000,
+      "salesPrice": 12000,
+      "stock": 9,
+      "mainPage": false,
+      "active": true,
+      "image": "cirkusz",
+      "id": 48
+    },
+    {
+      "travel_type": "fovarosi",
+      "destination": "Művészetek Palotája",
+      "description": "A MÜPA a 21. század igényei szerinti otthont biztosít a zene-, vizuális-, és színházművészeti előadásoknak, kiállításoknak. Különleges terek jellemzik, hangversenytermében egyedülálló az akusztika.",
+      "date": "2022.03.29.",
+      "long": 1,
+      "price": 20000,
+      "salesPrice": 0,
+      "stock": 7,
+      "mainPage": false,
+      "active": true,
+      "image": "palota",
+      "id": 49
+    }
+  ],
+  "extraimages": [
+    {
+      "source": "heviz-2"
+    },
+    {
+      "source": "heviz-3"
+    },
+    {
+      "source": "heviz-4"
+    },
+    {
+      "source": "heviz-5"
+    },
+    {
+      "source": "sopron-2"
+    },
+    {
+      "source": "sopron-3"
+    },
+    {
+      "source": "sopron-4"
+    },
+    {
+      "source": "holloko-2"
+    },
+    {
+      "source": "holloko-3"
+    },
+    {
+      "source": "holloko-4"
+    },
+    {
+      "source": "holloko-5"
+    },
+    {
+      "source": "holloko-6"
+    },
+    {
+      "source": "holloko-7"
+    },
+    {
+      "source": "skanzen-1"
+    },
+    {
+      "source": "skanzen-2"
+    },
+    {
+      "source": "skanzen-3"
+    },
+    {
+      "source": "skanzen-4"
+    },
+    {
+      "source": "skanzen-5"
+    },
+    {
+      "source": "rodosz-2"
+    },
+    {
+      "source": "rodosz-3"
+    },
+    {
+      "source": "rodosz-4"
+    },
+    {
+      "source": "rodosz-5"
+    },
+    {
+      "source": "sarospatak-1"
+    },
+    {
+      "source": "sarospatak-2"
+    },
+    {
+      "source": "sarospatak-3"
+    },
+    {
+      "source": "sarospatak-4"
+    },
+    {
+      "source": "keszthely-2"
+    },
+    {
+      "source": "keszthely-3"
+    },
+    {
+      "source": "keszthely-4"
+    },
+    {
+      "source": "allatkert-2"
+    },
+    {
+      "source": "allatkert-3"
+    },
+    {
+      "source": "budavar-2"
+    },
+    {
+      "source": "budavar-3"
+    },
+    {
+      "source": "cirkusz-2"
+    },
+    {
+      "source": "cirkusz-3"
+    },
+    {
+      "source": "gellert-2"
+    },
+    {
+      "source": "gellert-3"
+    },
+    {
+      "source": "halaszbastya-2"
+    },
+    {
+      "source": "halaszbastya-3"
+    },
+    {
+      "source": "hosok-tere-2"
+    },
+    {
+      "source": "hosok-tere-3"
+    },
+    {
+      "source": "margitsziget-2"
+    },
+    {
+      "source": "margitsziget-3"
+    },
+    {
+      "source": "palota-2"
+    },
+    {
+      "source": "palota-3"
+    },
+    {
+      "source": "parlament-2"
+    },
+    {
+      "source": "parlament-3"
+    },
+    {
+      "source": "szechenyi-2"
+    },
+    {
+      "source": "szechenyi-3"
+    }
+  ]
+}

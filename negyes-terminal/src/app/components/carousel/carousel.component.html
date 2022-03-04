@@ -1,0 +1,24 @@
+
+  <div class=" ">
+      <div class="row d-flex justify-content-center">
+        <ngb-carousel [interval]="3500">
+            <ng-template ngbSlide *ngFor="let travel of travels;index as i;">
+              <div class="wrapper ">
+                    <img *ngIf="travel?.travel_type==='belfold'" src="../../../assets/img/img-belfoldi-turizmus/{{travel?.image}}.jpg"
+                    class="d-block w-100" alt="{{travel?.image}}">
+        
+                <img *ngIf="travel?.travel_type==='kulfold'" src="../../../assets/img/img-kulfoldi-turizmus/{{travel?.image}}.jpg"
+                    class="d-block w-100" alt="{{travel?.image}}">
+        
+                <img *ngIf="travel?.travel_type==='fovarosi'" src="../../../assets/img/img-fovarosi-turizmus/{{travel?.image}}.jpg"
+                class="d-block w-100" alt="{{travel?.image}}">
+           </div>     
+           <div class="carousel-caption">
+            <h3><a  [href]="('details/'+travel.id)">{{ travel.destination }}</a></h3>
+           
+          </div>
+            </ng-template>
+          </ngb-carousel>
+      </div>
+    
+  </div>

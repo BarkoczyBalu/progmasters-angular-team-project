@@ -1,0 +1,167 @@
+<div class="container-fluid bgimage">
+    <div class="row">
+
+        <div class="col-11 col-lg-7 mx-auto">
+
+            <div *ngIf="id!=0" class="text-center p-5 form-head">
+                <h1>Travel módosítása</h1>
+                <p>Itt módosíthatod az utazás részleteit!</p>
+            </div>
+            <div *ngIf="id==0" class="text-center p-5 form-head">
+                <h1>Travel létrehozása</h1>
+                <p>Itt hozhatsz létre egy utazást!</p>
+            </div>
+
+            <div class="form-bg">
+                <form [formGroup]="travelForm" (ngSubmit)="onSubmit(travel)" class="">
+
+                    <div class="col-md-12 mb-3">
+                        <label for="inputTravel_type" class="form-label">Utazás típusa</label>
+
+                        <select formControlName="travel_type" id="inputTravel_type" name="travel_type"
+                            class="form-select">
+                            <option value="" disabled>Válassz kategóriát</option>
+                            <option [ngValue]="'belfold'">Belföldi út</option>
+                            <option [ngValue]="'kulfold'">Külföldi út</option>
+                            <option [ngValue]="'fovarosi'">Fővárosi túra</option>
+                        </select>
+
+                    </div>
+
+                    <div class="col-md-12 mb-3">
+                        <label for="inputDestination" class="form-label">Célállomás</label>
+                        <input formControlName="destination" type="text" class="form-control" id="inputDestination">
+                        <small class="text-danger"
+                            *ngIf="travelForm.get('destination')?.invalid && travelForm.get('destination')?.touched">
+                            Érvénytelen
+                            destination!
+                        </small>
+                    </div>
+
+                    <div class="col-md-12 mb-3">
+                        <label for="inputDescription" class="form-label">Leírás</label>
+                        <input formControlName="description" type="text" class="form-control" id="inputDescription">
+                        <small class="text-danger"
+                            *ngIf="travelForm.get('description')?.invalid && travelForm.get('description')?.touched">
+                            Érvénytelen
+                            description!
+                        </small>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-sm-6 mb-3">
+                            <label for="inputDate" class="form-label">Dátum</label>
+                            <input formControlName="date" type="text" class="form-control" id="inputDate">
+                            <small class="text-danger"
+                                *ngIf="travelForm.get('date')?.invalid && travelForm.get('date')?.touched">
+                                Érvénytelen
+                                date!
+                            </small>
+                        </div>
+
+                        <div class="col-sm-6 mb-3">
+                            <label for="inputLong" class="form-label">Időtartam (nap)</label>
+                            <input formControlName="long" type="number" class="form-control" id="inputLong">
+                            <small class="text-danger"
+                                *ngIf="travelForm.get('long')?.invalid && travelForm.get('long')?.touched">
+                                Érvénytelen long!
+                            </small>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+
+                        <div class="col-sm-6 mb-3">
+                            <label for="inputPrice" class="form-label">Ár</label>
+                            <input formControlName="price" type="number" class="form-control" id="inputPrice">
+                            <small class="text-danger"
+                                *ngIf="travelForm.get('price')?.invalid && travelForm.get('price')?.touched">
+                                Érvénytelen price!
+                            </small>
+                        </div>
+
+                        <div class="col-sm-6 mb-3">
+                            <label for="inputSalesPrice" class="form-label">Akciós ár</label>
+                            <input formControlName="salesPrice" type="number" class="form-control" id="inputSalesPrice">
+                            <small class="text-danger"
+                                *ngIf="travelForm.get('salesPrice')?.invalid && travelForm.get('salesPrice')?.touched">
+                                Érvénytelen salesPrice!
+                            </small>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-sm-6 mb-3">
+                            <label for="inputStock" class="form-label">Készlet</label>
+                            <input formControlName="stock" type="number" class="form-control" id="inputStock">
+                            <small class="text-danger"
+                                *ngIf="travelForm.get('stock')?.invalid && travelForm.get('stock')?.touched">
+                                Érvénytelen stock!
+                            </small>
+                        </div>
+
+                        <div class="col-sm-6 mb-3">
+                            <label class="form-label" for="inputActive">
+                                Elérhetőség
+                            </label>
+
+                            <select formControlName="active" id="inputActive" name="active" class="form-select">
+                                <option value="" disabled>Válassz kategóriát</option>
+                                <option [ngValue]="true">true</option>
+                                <option [ngValue]="false">false</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row mb-3">
+
+                        <label class="form-label" for="inputMainPage">
+                            MainPage oldalon az utazás megjelenítése
+                        </label>
+
+                        <div class="col">
+                            <label class="form-check-label" for="mainTrue">
+                                Igen
+                            </label>
+                            <input formControlName="mainPage" [value]="true" class="form-check-input" type="radio"
+                                id="mainTrue" checked>
+                        </div>
+
+                        <div class="col">
+                            <label class="form-check-label" for="mainFalse">
+                                Nem
+                            </label>
+                            <input formControlName="mainPage" [value]="false" class="form-check-input" type="radio"
+                                id="mainFalse">
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-12 mb-3">
+                        <label for="inputImage" class="form-label">Image</label>
+                        <input formControlName="image" type="text" class="form-control" id="inputImage">
+                        <small class="text-danger"
+                            *ngIf="travelForm.get('image')?.invalid && travelForm.get('image')?.touched">
+                            Érvénytelen image!
+                        </small>
+                    </div>
+
+
+                    <button type="submit" [disabled]="travelForm.invalid"
+                        class="btn btn-primary-new w-100 p-3 mt-3">Küldés</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>

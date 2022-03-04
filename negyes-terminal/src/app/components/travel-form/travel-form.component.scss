@@ -1,0 +1,57 @@
+@import "../../../styles.scss";
+
+.bgimage {
+    background-image: url(../../../assets/img/brand/beach.jpg),
+        linear-gradient(to right, rgb(3, 32, 120), rgb(3, 32, 129));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%, 100%;
+
+    .form-head {
+        h1 {
+            font-size: 3vh;
+            font-weight: 900;
+            color: $color-white;
+
+            @media (min-width: 768px) {
+                font-size: 5vh;
+            }
+        }
+
+        p {
+            font-size: 2vh;
+            font-weight: 700;
+            color: rgba($color-white, 0.8);
+        }
+    }
+
+    .form-bg {
+        background: $color-grey;
+        padding: 1.5rem;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input,
+    select,
+    textarea {
+        border: 0;
+        outline: 0;
+        padding: 1em;
+        border-radius: 8px;
+        display: block;
+        width: 100%;
+        margin-top: 1em;
+        box-shadow: 0 1px 1px rgba($color-black, 0.3);
+        resize: none;
+        color: rgba($color-black, 0.8);
+        margin-top: 0.5rem;
+
+        &:focus {
+            box-shadow: 0 0 2px rgba(blue, 1);
+        }
+    }
+}

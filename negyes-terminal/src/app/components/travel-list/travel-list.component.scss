@@ -1,0 +1,12 @@
+tr:hover {
+    background-color: rgb(221, 219, 219);
+    cursor: pointer;
+}
+
+.table > :not(caption) > * > * {
+    border-bottom-width: 0;
+}
+
+.newTravelImg {
+    max-width: 100px;
+}

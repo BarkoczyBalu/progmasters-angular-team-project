@@ -1,0 +1,85 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Spectral:ital,wght@0,400;1,500&display=swap");
+
+html,
+body {
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+$color-white: rgb(255, 255, 255);
+$color-black: rgb(0, 0, 0);
+$color-grey: #cccccc;
+$color-darkgrey: rgb(100, 100, 100);
+
+.btn-primary-new {
+    background-color: #044ebd;
+    border: 1px solid #044ebd;
+    padding: 0.7rem;
+    color: white;
+    border-radius: 0px;
+    width: 100%;
+
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary-new:hover {
+    background-color: #023685;
+    color: white !important;
+}
+
+.btn-primary-new:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    background: #fff;
+    left: 50%;
+    height: 2px;
+    bottom: 0;
+    transition: all 0.5s;
+    opacity: 0.7;
+}
+
+.btn-primary-new:hover:before {
+    width: 100%;
+    left: 0;
+    bottom: 2px;
+}
+
+.btn-menu {
+    text-align: center;
+    display: inline-block;
+    padding: 15px 40px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+
+.btn-menu:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    background: #023685;
+    left: 45%;
+    height: 3px;
+    bottom: 0;
+    transition: all 0.3s;
+    opacity: 0.7;
+}
+
+.btn-menu:hover:before {
+    width: 100%;
+    left: 0;
+}
+
+/* Importing Bootstrap SCSS file. */
+// @import '~bootstrap/scss/bootstrap';

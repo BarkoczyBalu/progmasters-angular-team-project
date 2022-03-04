@@ -1,0 +1,53 @@
+<div class="container-fluid bgimage">
+    <div class="row">
+
+        <div class="col-11 col-lg-7 mx-auto my-3">
+
+            <div class="text-center p-5 form-head">
+                <h1>Regisztráció</h1>
+                <p>Foglalj utat gyorsan és egyszerűen!</p>
+            </div>
+
+            <div class="form-bg">
+                <form [formGroup]="regForm" (ngSubmit)="onSubmit()">
+
+                    <div class="col-md-12 mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input formControlName="email" type="text" class="form-control" id="email">
+                        <small class="text-danger"
+                            *ngIf="regForm.get('email')?.invalid && regForm.get('email')?.touched">
+                            Kérlek írd be az e-mail címedet!
+                        </small>
+                    </div>
+
+                    <div class="col-md-12 mb-3">
+                        <label for="username" class="form-label">Felhasználónév</label>
+                        <input formControlName="username" type="text" class="form-control" id="username">
+                        <small class="text-danger"
+                            *ngIf="regForm.get('username')?.invalid && regForm.get('username')?.touched">
+                            Kérlek írd be a kívánt felhasználónevet!
+                        </small>
+                    </div>
+
+                    <div class="col-md-12 mb-3">
+                        <label for="password" class="form-label">Jelszó</label>
+                        <input formControlName="password" type="password" class="form-control" id="password">
+                        <small class="text-danger"
+                            *ngIf="regForm.get('password')?.invalid && regForm.get('password')?.touched">
+                            Kérlek írd be a jelszavad!
+                        </small>
+                    </div>
+
+                    <p>Van már fiókod? <a routerLink="/login" class="link-primary">Jelentkezz be!</a></p>
+
+                    <button type="submit" [disabled]="regForm.invalid"
+                        class="btn btn-primary-new w-100 p-3 mt-3 mb-3">Küldés</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>

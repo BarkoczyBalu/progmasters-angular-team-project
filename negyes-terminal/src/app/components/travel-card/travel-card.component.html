@@ -1,0 +1,29 @@
+<div class="card text-center h-100 d-flex mx-1">
+
+    <img *ngIf="travel?.travel_type==='belfold'" src="../../../assets/img/img-belfoldi-turizmus/{{travel?.image}}.jpg"
+        class="card-img-top" alt="{{travel?.image}}">
+
+    <img *ngIf="travel?.travel_type==='kulfold'" src="../../../assets/img/img-kulfoldi-turizmus/{{travel?.image}}.jpg"
+        class="card-img-top" alt="{{travel?.image}}">
+
+    <img *ngIf="travel?.travel_type==='fovarosi'" src="../../../assets/img/img-fovarosi-turizmus/{{travel?.image}}.jpg"
+    class="card-img-top" alt="{{travel?.image}}">
+
+    <div class="card-body text-center d-flex flex-column justify-content-between">
+        <h5 class="card-title"> {{travel?.destination}} </h5>
+
+        <div class="">
+            <div class="card-details">
+                <p class="card-text travel-price" [ngClass]="{'pricetrough' : travel?.salesPrice}"> {{travel?.price |
+                    forint
+                    }} Ft
+                </p>
+                <p class="card-text travel-salesprice" *ngIf="travel?.salesPrice"> {{travel?.salesPrice | forint}} Ft
+                </p>
+                <p class="card-text">Foglalható helyek: {{travel?.stock}} </p>
+            </div>
+            <a [routerLink]="'/details/'+travel?.id" class="btn btn-primary-new mt-2">Részletek</a>
+        </div>
+    </div>
+
+</div>

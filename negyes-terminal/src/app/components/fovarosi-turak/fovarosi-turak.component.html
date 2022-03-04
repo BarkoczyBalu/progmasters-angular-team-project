@@ -1,0 +1,13 @@
+<div class="container col-lg-12 mt-5">
+    <div class="row mx-auto">
+
+        <div class="text-center py-3 mb-0">
+            <h3 class="m-0 card-title">Fővárosi túrák</h3>
+        </div>
+
+        <app-travel-card [travel]="travel" *ngFor="let travel of travels"
+            class="col-11 col-md-6 col-lg-4 col-xl-3 mx-auto mx-lg-0 mb-4 px-lg-0">
+        </app-travel-card>
+
+    </div>
+</div>
